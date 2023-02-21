@@ -98,3 +98,11 @@ displayTime();
 setInterval(displayTime, 1000);
 
 printProjectData();
+
+//add datepickewidget to modal
+$(() => {
+  $("#datepicker").datepicker({
+    changeMonth: true,
+    changeYear: true,
+  });
+});
