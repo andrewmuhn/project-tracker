@@ -5,6 +5,7 @@ var projectFormEl = $('#project-form');
 var projectNameInputEl = $('#project-name-input');
 var projectTypeInputEl = $('#project-type-input');
 var projectDateInputEl = $('#project-date-input');
+let submitNewProject = $('#submit-new-project');
 
 // handle displaying the time
 function displayTime() {
@@ -68,7 +69,7 @@ function handleDeleteProject() {
 // Adds a project to local storage and prints the project data
 function handleProjectFormSubmit(event) {
   event.preventDefault();
-
+  console.log('test');
   // read user input from the form
 
 
@@ -92,7 +93,10 @@ function handleProjectFormSubmit(event) {
 // Use jQuery event delegation to listen for clicks on dynamically added delete
 // buttons.
 // add event handler via delegation
+// let myModal = $('#new-project-modal');
+// let myInput = $('#my-input');
 
+submitNewProject.on("submit", handleProjectFormSubmit);
 
 displayTime();
 setInterval(displayTime, 1000);
