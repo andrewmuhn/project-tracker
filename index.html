@@ -60,22 +60,31 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="row mb-3 align-items-center">
+
+          <div class="row mb-3">
             <label for="projectName" class="col-sm-3 col-form-label">Project Name</label>
             <div class="col-sm-9">
               <input type="text" class="form-control" id="projectName">
             </div>
           </div>
-          <div class="row mb-3 align-items-center">
+          <div class="row mb-3">
             <label for="projectType" class="col-sm-3 col-form-label">Project Type</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="projectType">
+              <select class="form-select" id="projectType">
+                <option selected>Pick a type</option>
+                <option value="1">HTML</option>
+                <option value="2">JavaScript</option>
+                <option value="3">CSS</option>
+                <option value="4">JQuery</option>
+                <option value="5">node.js</option>
+                <option value="6">bootstrap</option>
+              </select>
             </div>
           </div>
-          <div class="row mb-3 align-items-center">
-            <label for="datepicker" class="col-sm-3 col-form-label">Due Date</label>
+          <div class="row mb-3">
+            <label for="dueDate" class="col-sm-3 col-form-label">Due Date</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="datepicker" autocomplete="off">
+              <input type="date" class="form-control" id="dueDate" autocomplete="off">
             </div>
           </div>
         </div>
