@@ -55,13 +55,13 @@
               <th scope="col"></th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="project-display">
             <tr>
               <th scope="row">1</th>
               <td>Example</td>
               <td>Test</td>
               <td>Date</td>
-              <td><button></button></td>
+              <td><button class="btn btn-sm">X</button></td>
             </tr>
           </tbody>
         </table>
@@ -79,38 +79,38 @@
           <h5 class="modal-title" id="new-project-modal-label">New Project</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <form id="submit-new-project" action="">
+        <form id="project-form">
           <div class="modal-body">
             <div class="row mb-3">
-              <label for="projectName" class="col-sm-3 col-form-label">Project Name</label>
+              <label for="project-name-input" class="col-sm-3 col-form-label">Project Name</label>
               <div class="col-sm-9">
                 <input type="text" class="form-control" id="project-name-input">
               </div>
             </div>
             <div class="row mb-3">
-              <label for="projectType" class="col-sm-3 col-form-label">Project Type</label>
+              <label for="project-type-input" class="col-sm-3 col-form-label">Project Type</label>
               <div class="col-sm-9">
-                <select class="form-select" id="projectType">
+                <select class="form-select" id="project-type-input">
                   <option selected>Pick a type</option>
-                  <option value="1">HTML</option>
-                  <option value="2">JavaScript</option>
-                  <option value="3">CSS</option>
-                  <option value="4">JQuery</option>
-                  <option value="5">node.js</option>
-                  <option value="6">bootstrap</option>
+                  <option value="HTML">HTML</option>
+                  <option value="JavaScript">JavaScript</option>
+                  <option value="CSS">CSS</option>
+                  <option value="JQuery">JQuery</option>
+                  <option value="node.js">node.js</option>
+                  <option value="bootstrap">bootstrap</option>e
                 </select>
               </div>
             </div>
             <div class="row mb-3">
-              <label for="dueDate" class="col-sm-3 col-form-label">Due Date</label>
+              <label for="project-date-input" class="col-sm-3 col-form-label">Due Date</label>
               <div class="col-sm-9">
-                <input type="date" class="form-control" id="dueDate" autocomplete="off">
+                <input type="date" class="form-control" id="project-date-input" autocomplete="off">
               </div>
             </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <input type="submit" class="btn btn-primary" value="Add Project" id="my-input">
+            <input type="submit" class="btn btn-primary" value="Add Project">
           </div>
         </form>
       </div>
