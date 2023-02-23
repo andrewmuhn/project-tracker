@@ -22,8 +22,31 @@ h6 {
 }
 
 /* Shared custom styles for headers */
-/* add custom styling to headers/buttons and hover */
+.header,
+.custom-modal-header,
+.custom-card-header,
+.btn-custom {
+  background-color: var(--darkblue);
+  color: var(--light);
+}
 
+/* add custom styling to headers/buttons and hover */
+.btn-custom:hover {
+  background-color: var(--red);
+  color: var(--light);
+}
+
+.table-custom th {
+  background-color: var(--red);
+  color: var(--light);
+}
 
 /* style project rows based on status (late, due today) */
 /* add styling for late/due today */
+.project-late {
+  background-color: var(--lightred);
+}
+
+.project-today {
+  background-color: var(--lightyellow);
+}
